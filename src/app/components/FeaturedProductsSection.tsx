@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 const FeaturedProductsSection: React.FC = () => {
   return (
     <>
-      <h2 className="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Products</h2>
+      <h2 id='shop' className="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Products</h2>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
         <ProductCard imageUrl="/images/product-1.jpg" title="Organic Himalayan Tea" />
         <ProductCard imageUrl="/images/product-2.jpg" title="Handwoven Pashmina Shawl" />

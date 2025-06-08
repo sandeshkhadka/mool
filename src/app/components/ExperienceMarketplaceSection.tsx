@@ -4,7 +4,7 @@ import ExperienceCard from './ExperienceCard';
 const ExperienceMarketplaceSection: React.FC = () => {
   return (
     <>
-      <h2 className="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experience Marketplace</h2>
+      <h2 id="experience" className="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experience Marketplace</h2>
       <div className="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <div className="flex items-stretch p-4 gap-3">
           <ExperienceCard

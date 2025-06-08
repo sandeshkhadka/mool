@@ -3,7 +3,7 @@ import React from 'react';
 const StoriesSection: React.FC = () => {
   return (
     <>
-      <h2 className="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Stories from the Soil</h2>
+      <h2 id='stories' className="text-[#181411] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Stories from the Soil</h2>
       <div className="p-4">
         <div className="flex items-stretch justify-between gap-4 rounded-xl">
           <div className="flex flex-[2_2_0px] flex-col gap-4">
