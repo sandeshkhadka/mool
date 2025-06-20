@@ -1,18 +1,38 @@
-import React from 'react';
+"use client";
+
+import { useState } from "react";
 
 interface FeatureCardProps {
-  icon: React.ReactNode; // Can be an SVG or an Image component
+  icon: React.ReactNode;
   title: string;
+  description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title }) => {
+const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
+  const [flipped, setFlipped] = useState(false);
   return (
-    <div className="flex flex-1 gap-3 rounded-lg border border-[#e6e0db] bg-white p-4 items-center">
-      <div className="text-[#181411]">
-        {icon}
+    <>
+      <div
+        className="h-40 [perspective:1000px] z-0"
+        onMouseEnter={() => setFlipped(true)}
+        onMouseLeave={() => setFlipped(false)}
+      >
+        <div
+          className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] ${
+            flipped ? "[transform:rotateY(180deg)]" : ""
+          }`}
+        >
+          <div className="absolute w-full h-full flex flex-col justify-center items-center bg-white border border-gray-300 rounded-lg shadow text-black [backface-visibility:hidden]">
+            <div className="text-3xl text-[#eb7f13]">{icon}</div>
+            <h1 className=" text-2xl font-bold">{title}</h1>
+          </div>
+
+          <div className="absolute w-full h-full flex justify-center items-center bg-[#c9c9c9] border border-gray-300 rounded-lg shadow p-4 text-black text-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+            {description}
+          </div>
+        </div>
       </div>
-      <h2 className="text-[#181411] text-base font-bold leading-tight">{title}</h2>
-    </div>
+    </>
   );
 };
 
