@@ -3,7 +3,7 @@ import Link from "next/link"; // Use Link for internal navigation
 
 const Header: React.FC = () => {
   return (
-    <header id="home" className="flex fixed w-full mb-4 items-center justify-between max-h-16 whitespace-nowrap border-b-2 bg-[#f3f3f3] border-black px-10 py-3">
+    <header id="home" className="flex fixed w-full mb-4 items-center justify-between max-h-16 whitespace-nowrap border-b-2 bg-[#f3f3f3] border-black z-50 px-10 py-3">
       <Link href="/">
       <div  className="flex cursor-pointer items-center gap-4 text-[#181411]">
         <div className="size-4">
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
       <div className="flex flex-1 justify-end gap-8">
         <div className="flex items-center gap-9 ">
           <Link
-            href="#shop"
+            href="/#shop"
             className="text-[#181411] text-sm font-medium hover:text-[#eb7f13] leading-normal"
           >
             Shop

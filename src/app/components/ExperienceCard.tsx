@@ -8,7 +8,7 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ imageUrl, title, description }) => {
   return (
-    <div className="flex h-full border-black border-1 flex-1 flex-col gap-4 rounded-lg min-w-60">
+    <div className="flex h-full  flex-1 flex-col gap-4 rounded-lg min-w-60">
       <div
         className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
         style={{ backgroundImage: `url("${imageUrl}")` }}
