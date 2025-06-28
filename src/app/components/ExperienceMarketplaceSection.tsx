@@ -4,22 +4,22 @@ import ExperienceCard from './ExperienceCard';
 const ExperienceMarketplaceSection: React.FC = () => {
   const data=[
   {
-    "imageUrl": "Ghandruk-Village.webp",
-    "title": "Himalayan Trekking Adventure",
+    "imageUrl": "dhoopclass.jpg",
+    "title": "Dhoop Making classes",
     "description": "Explore the breathtaking landscapes of the Himalayas."
   },
   {
-    "imageUrl": "/images/experience-2.jpg",
+    "imageUrl": "/cooking.jpg",
     "title": "Authentic Nepali Cooking Class",
     "description": "Learn to cook traditional Nepali dishes with local chefs."
   },
   {
-    "imageUrl": "/images/experience-3.jpg",
+    "imageUrl": "/pottery.jpeg",
     "title": "Traditional Pottery Workshop",
     "description": "Create your own pottery with skilled artisans."
   },
   {
-    "imageUrl": "/images/experience-4.jpg",
+    "imageUrl": "meditaiton.jpg",
     "title": "Serene Meditation Retreat",
     "description": "Find inner peace with a guided meditation retreat."
   }
