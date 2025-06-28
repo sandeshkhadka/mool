@@ -4,7 +4,7 @@ import ExperienceCard from './ExperienceCard';
 const ExperienceMarketplaceSection: React.FC = () => {
   const data=[
   {
-    "imageUrl": "/dhoopclass.jpg",
+    "imageUrl": "/Dhoopclass.jpg",
     "title": "Dhoop Making classes",
     "description": "Explore the breathtaking landscapes of the Himalayas."
   },
