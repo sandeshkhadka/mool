@@ -6,7 +6,7 @@ export default function ComingSoonPage() {
       <div className="max-w-md">
         <h1 className="text-5xl font-extrabold text-[#eb7f13] mb-4">🚧 Coming Soon</h1>
         <p className="text-lg text-black mb-8 leading-relaxed">
-          This page is under construction. We're working hard to bring it to life.
+          This page is under construction. We&apos;re working hard to bring it to life.
         </p>
         <Link
           href="/"
