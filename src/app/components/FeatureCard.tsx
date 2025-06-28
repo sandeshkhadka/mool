@@ -5,7 +5,7 @@ import { useState } from "react";
 interface FeatureCardProps {
   icon: React.ReactNode;
   title: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
@@ -27,7 +27,7 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
             <h1 className=" text-2xl font-bold">{title}</h1>
           </div>
 
-          <div className="absolute w-full h-full flex justify-center items-center bg-[#c9c9c9] border border-gray-300 rounded-lg shadow p-4 text-black text-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <div className="absolute w-full h-full flex justify-center items-center bg-[#ebebeb] border border-gray-300 rounded-lg shadow p-4 text-black text-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
             {description}
           </div>
         </div>

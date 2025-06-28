@@ -1,7 +1,6 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 
-// SVG Icons (moved here or can be a separate file for icons)
 const LeafIcon: React.FC = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -60,23 +59,57 @@ const FeaturesSection: React.FC = () => {
         <FeatureCard
           icon={<LeafIcon />}
           title="Organic Goods"
-          description="check1"
+          description={
+            <span className="flex flex-col items-center text-black gap-2 text-sm text-center">
+              <span className="text-[#eb7f13]">
+                <LeafIcon />
+              </span>
+              Sourced directly from Himalayan farms, free of chemicals and fully
+              natural.
+            </span>
+          }
         />
 
         <FeatureCard
           icon={<HandWavingIcon />}
           title="Handmade Crafts"
-          description="check2"
+          description={
+            <span className="flex flex-col items-center text-black gap-2 text-sm text-center">
+              <span className="text-[#eb7f13]">
+                <HandWavingIcon />
+              </span>
+              Lovingly handcrafted by local artisans to preserve culture and
+              creativity.
+            </span>
+          }
         />
+
         <FeatureCard
           icon={<MountainsIcon />}
-          title=" Gain Experiences"
-          description="check3"
+          title="Gain Experiences"
+          description={
+            <span className="flex flex-col items-center text-black gap-2 text-sm text-center">
+              <span className="text-[#eb7f13]">
+                <MountainsIcon />
+              </span>
+              Engage in authentic Nepali traditions like cooking, pottery, and
+              meditation.
+            </span>
+          }
         />
+
         <FeatureCard
           icon={<UsersThreeIcon />}
           title="Community Impact"
-          description="check4"
+          description={
+            <span className="flex flex-col items-center text-black gap-2 text-sm text-center">
+              <span className="text-[#eb7f13]">
+                <UsersThreeIcon />
+              </span>
+              Every purchase supports rural livelihoods and promotes
+              sustainability.
+            </span>
+          }
         />
       </div>
     </>
