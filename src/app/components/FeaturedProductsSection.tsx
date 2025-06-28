@@ -5,12 +5,7 @@ import Link from "next/link";
 
 const FeaturedProductsSection: React.FC = () => {
   const products = [
-    {
-      id: 1,
-      imageUrl: "https://www.assamicaagro.in/cdn/shop/articles/Untitled_design_26_900x.png?v=1592799889",
-      title: "Organic Himalayan Tea",
-      price: 850
-    },
+    
     {
       id: 2,
       imageUrl: "/dhoop.jpg",

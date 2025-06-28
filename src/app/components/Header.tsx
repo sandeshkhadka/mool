@@ -1,27 +1,25 @@
 import React from "react";
 import Link from "next/link"; // Use Link for internal navigation
-
+import Image from "next/image";
 const Header: React.FC = () => {
   return (
-    <header id="home" className="flex fixed w-full mb-4 items-center justify-between max-h-16 whitespace-nowrap border-b-2 bg-[#f3f3f3] border-black z-50 px-10 py-3">
+    <header
+      id="home"
+      className="flex fixed w-full mb-4 items-center justify-between max-h-16 whitespace-nowrap border-b-2 bg-[#f3f3f3] border-black z-50 px-10 py-3"
+    >
       <Link href="/">
-      <div  className="flex cursor-pointer items-center gap-4 text-[#181411]">
-        <div className="size-4">
-          <svg
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="logo"
-          >
-            <path
-              d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
-              fill="currentColor"
-            ></path>
-          </svg>
+        <div className="flex cursor-pointer items-center gap-4 text-[#181411]">
+          <div className="">
+            <Image
+              src="/logo.png" // Static image in public folder
+              alt="Dhoop product"
+              width={100} // Required
+              height={500} // Required
+              className="rounded-lg" // Optional Tailwind styles
+            />
+          </div>
+         
         </div>
-        <h2 className="text-[#181411] text-lg font-bold leading-tight tracking-[-0.015em]">
-          Mool
-        </h2>
-      </div>
       </Link>
       <div className="flex flex-1 justify-end gap-8">
         <div className="flex items-center gap-9 ">
